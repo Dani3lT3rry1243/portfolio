@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add("js");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Daniel</title>
+<meta name="description" content="Get in touch with Daniel.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="images/Logo.svg">
+</head>
+<body>
+
+<div class="statusbar">
+  <div class="wrap">
+    <span class="seg"><span class="dot"></span>host: <b>daniel-net</b></span>
+    <span class="seg">os: <b>debian 12</b></span>
+    <span class="seg">uptime: <b data-uptime>—</b></span>
+    <span class="seg">status: <b style="color:var(--accent)">online</b></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="prompt">&gt;</span> daniel<span class="cursor"></span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">≡</button>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="contact.html" aria-current="page">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow reveal">contact</span>
+      <h1 class="reveal">Let's talk.</h1>
+      <p class="lede reveal">Open to questions about a project, collaboration, or just talking shop about networking and self-hosting.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="grid-2">
+
+        <div class="reveal">
+          <div class="cmd-line"><span class="prompt">&gt;</span> cat <span class="path">./contact.conf</span></div>
+          <div class="kv">
+            <div class="kv-row">
+              <span class="kv-key">email</span>
+              <span class="kv-val"><a href="mailto:danielterry1243@gmail.com">danielterry1243@gmail.com</a></span>
+            </div>
+            <div class="kv-row">
+              <span class="kv-key">github</span>
+              <span class="kv-val"><a href="https://github.com/Dani3lT3rry1243" target="_blank" rel="noopener">@Dani3lT3rry1243</a></span>
+            </div>
+            <div class="kv-row">
+              <span class="kv-key">site</span>
+              <span class="kv-val"><a href="https://24374442.xyz" target="_blank" rel="noopener">24374442.xyz</a></span>
+            </div>
+            <div class="kv-row"
+            <span class="kv-key">Linkedin</span>
+            <span class="kv-val"><a href="https://www.linkedin.com/in/daniel-terry-61b4a3432/">www.linkedin.com/in/daniel-terry-61b4a3432</a></span>
+             </div>
+            <div class="kv-row">
+              <span class="kv-key">status</span>
+              <span class="kv-val" style="color:var(--accent)">accepting messages</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="cmd-line"><span class="prompt">&gt;</span> ./send-message.sh</div>
+          <form class="contact-form" data-to="danielterry1243@gmail.com">
+            <div class="field">
+              <label for="name">name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="message">message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn primary">send message →</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 Daniel. Built and deployed by hand.</p>
+    <div class="foot-links">
+      <a href="https://github.com/Dani3lT3rry1243" target="_blank" rel="noopener">github</a>
+      <a href="index.html">home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

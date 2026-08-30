@@ -1,11 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel  Software &amp; Infrastructure</title>
+<meta name="description" content="Daniel's portfolio  Windows desktop software in C#, a self-hosted Debian home lab, physical network builds, and virtualization.">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" type="image/png" href="images/Logo.svg">
 </head>
 <body>
-    
+
+<div class="statusbar">
+  <div class="wrap">
+    <span class="seg"><span class="dot"></span>host: <b>daniel-net</b></span>
+    <span class="seg">os: <b>debian 12</b></span>
+    <span class="seg">uptime: <b data-uptime></b></span>
+    <span class="seg">status: <b style="color:var(--accent)">online</b></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="prompt">&gt;</span> daniel<span class="cursor"></span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">≡</button>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+
+        <div class="reveal">
+          <span class="eyebrow">software · systems · networking</span>
+          <h1>I build the software,<br>then I build what it runs on.</h1>
+          <p class="lede">Windows desktop applications in C# on one side, a self-managed Debian server and a growing physical network  switches, structured cabling, routers  on the other. Currently expanding into virtualization to tie both halves together.</p>
+          <div class="btn-row">
+            <a href="projects.html" class="btn primary">view projects →</a>
+            <a href="contact.html" class="btn">get in touch</a>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="fetch-card">
+            <div class="fetch-head">
+              <span class="lights"><span></span><span></span><span></span></span>
+              whoami  daniel@daniel-net
+            </div>
+            <div class="fetch-row">
+                <div class="fetch-line"><span class="fetch-key">os</span><span class="fetch-val">Debian 12 (bookworm)</span></div>
+                <div class="fetch-line"><span class="fetch-key">host</span><span class="fetch-val">home lab · this site</span></div>
+                <div class="fetch-line"><span class="fetch-key">shell</span><span class="fetch-val">C# / .NET, JS</span></div>
+                <div class="fetch-line"><span class="fetch-key">net</span><span class="fetch-val">switches, cabling, routers</span></div>
+                <div class="fetch-line"><span class="fetch-key">focus</span><span class="fetch-val">virtualization (in progress)</span></div>
+                <div class="fetch-line"><span class="fetch-key">uptime</span><span class="fetch-val" data-uptime></span></div>
+                <div class="fetch-bars">
+                  <span style="background:var(--accent)"></span>
+                  <span style="background:var(--warn)"></span>
+                  <span style="background:#8ab4f8"></span>
+                  <span style="background:var(--border-lt)"></span>
+                  <span style="background:var(--text-faint)"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="cmd-line reveal"><span class="prompt">&gt;</span> cat <span class="path">./network-topology.svg</span></div>
+      <div class="reveal">
+        <svg class="topo" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram: a router connects to a switch, which connects to a Debian server, a virtualization host, and a workstation.">
+          <line class="link" x1="150" y1="60" x2="150" y2="130"/>
+          <line class="link" x1="150" y1="130" x2="330" y2="130"/>
+          <line class="link" x1="330" y1="130" x2="330" y2="60"/>
+          <line class="link" x1="330" y1="130" x2="330" y2="200"/>
+          <line class="link" x1="330" y1="130" x2="510" y2="60"/>
+          <line class="link" x1="330" y1="130" x2="510" y2="130"/>
+          <line class="link" x1="330" y1="130" x2="510" y2="200"/>
+
+          <rect class="node" x="90" y="30" width="120" height="30" rx="3"/>
+          <text x="150" y="50" text-anchor="middle">INTERNET</text>
+
+          <rect class="node" x="270" y="115" width="120" height="30" rx="3"/>
+          <text x="330" y="135" text-anchor="middle" class="label-accent">ROUTER</text>
+
+          <rect class="node" x="270" y="30" width="120" height="30" rx="3"/>
+          <text x="330" y="50" text-anchor="middle">WAN</text>
+
+          <rect class="node" x="270" y="185" width="120" height="30" rx="3"/>
+          <text x="330" y="205" text-anchor="middle">SWITCH (VLANs)</text>
+
+          <rect class="node" x="450" y="30" width="140" height="30" rx="3"/>
+          <text x="520" y="50" text-anchor="middle">DEBIAN SERVER</text>
+
+          <rect class="node" x="450" y="115" width="140" height="30" rx="3"/>
+          <text x="520" y="135" text-anchor="middle">VM HOST</text>
+
+          <rect class="node" x="450" y="185" width="140" height="30" rx="3"/>
+          <text x="520" y="205" text-anchor="middle">WORKSTATION</text>
+
+          <circle class="pulse" cx="150" cy="45" r="3"/>
+          <circle class="pulse" cx="330" cy="130" r="3"/>
+          <circle class="pulse" cx="520" cy="45" r="3"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cmd-line reveal"><span class="prompt">&gt;</span> ls <span class="path">./projects</span> --top 3</div>
+      <div class="grid-3">
+
+        <div class="card reveal">
+          <div class="card-head"><h3>cherylterry.com</h3><span class="pill live">live</span></div>
+          <p>A hand-built site designed and shipped end to end  layout, styling and deployment handled solo.</p>
+          <div class="tags"><span class="tag">html/css</span><span class="tag">deployed</span></div>
+          <a class="card-link" href="https://cherylterry.com" target="_blank" rel="noopener">visit site →</a>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-head"><h3>Debian home server</h3><span class="pill live">running</span></div>
+          <p>Self-managed Linux box handling storage and services for the home network provisioned, hardened, and maintained from the command line; It also stores videos/movies for online access if i want quick 4k things to watch</p>
+          <div class="tags"><span class="tag">debian</span><span class="tag">linux admin</span></div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-head"><h3>Physical network build</h3><span class="pill progress">in progress</span></div>
+          <p>Structured cabling, switch configuration and routing for a growing home/lab network.</p>
+          <div class="tags"><span class="tag">switches</span><span class="tag">routing</span></div>
+        </div>
+
+      </div>
+      <div class="btn-row">
+        <a href="projects.html" class="btn">see all projects →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 Daniel. Built and deployed by hand.</p>
+    <div class="foot-links">
+      <a href="https://github.com/Dani3lT3rry1243" target="_blank" rel="noopener">github</a>
+      <a href="contact.html">contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/script.js"></script>
 </body>
 </html>

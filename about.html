@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add("js");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About  Daniel</title>
+<meta name="description" content="About Daniel  student developer working across C# desktop software, Linux administration, and networking.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="images/Logo.svg">
+</head>
+<body>
+
+<div class="statusbar">
+  <div class="wrap">
+    <span class="seg"><span class="dot"></span>host: <b>daniel-net</b></span>
+    <span class="seg">os: <b>debian 12</b></span>
+    <span class="seg">uptime: <b data-uptime></b></span>
+    <span class="seg">status: <b style="color:var(--accent)">online</b></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="prompt">&gt;</span> daniel<span class="cursor"></span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">≡</button>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html" aria-current="page">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow reveal">about</span>
+      <h1 class="reveal">Student developer. Part-time systems admin<br>of my own network.</h1>
+      <p class="lede reveal">I split my time between two sides of the same problem: writing the software people use, and running the machines and network it lives on.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap">
+      <div class="cmd-line reveal"><span class="prompt">&gt;</span> cat <span class="path">./bio.txt</span></div>
+      <p class="reveal">I'm a student focused on Windows desktop application development, building with C# in Visual Studio. Outside of coursework, I run a Debian server at home that I administer entirely from the command line  provisioning it, keeping it patched, and using it as the base for whatever I'm building next.</p>
+      <p class="reveal">That server doesn't run in isolation. I've been building out the physical network around it: structured cabling, switch configuration, and routing, so the hardware side is as deliberate as the software side. The current focus is tying it together with virtualization  spinning up virtual environments to test, isolate, and deploy services without having to physicaly connect it each time.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+
+      <div class="pkg-block reveal">
+        <div class="cmd-line"><span class="prompt">&gt;</span> apt list --installed <span class="path">| grep software</span></div>
+        <div class="pkg-list">
+          <span class="pkg">C#</span>
+          <span class="pkg">.NET</span>
+          <span class="pkg">Visual Studio</span>
+          <span class="pkg">Windows desktop dev</span>
+          <span class="pkg">HTML / CSS / JS</span>
+        </div>
+      </div>
+
+      <div class="pkg-block reveal">
+        <div class="cmd-line"><span class="prompt">&gt;</span> apt list --installed <span class="path">| grep systems</span></div>
+        <div class="pkg-list">
+          <span class="pkg">Debian / Linux administration</span>
+          <span class="pkg">Command-line server management</span>
+          <span class="pkg">Self-hosting</span>
+        </div>
+      </div>
+
+      <div class="pkg-block reveal">
+        <div class="cmd-line"><span class="prompt">&gt;</span> apt list --installed <span class="path">| grep networking</span></div>
+        <div class="pkg-list">
+          <span class="pkg">Structured cabling</span>
+          <span class="pkg">Switch configuration</span>
+          <span class="pkg">Routing</span>
+          <span class="pkg">Home network builds</span>
+        </div>
+      </div>
+
+      <div class="pkg-block reveal">
+        <div class="cmd-line"><span class="prompt">&gt;</span> apt list --upgradable <span class="path">| grep in-progress</span></div>
+        <div class="pkg-list">
+          <span class="pkg">Virtualization &amp; virtual environments</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cmd-line reveal"><span class="prompt">&gt;</span> cat <span class="path">./now.txt</span></div>
+      <p class="reveal">Right now: finishing coursework in Windows desktop development, keeping the home server running, and building out virtualization skills so I can spin up and tear down environments as easily as I write code.</p>
+      <div class="btn-row reveal">
+        <a href="projects.html" class="btn primary">see what I'm building →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 Daniel. Built and deployed by hand.</p>
+    <div class="foot-links">
+      <a href="https://github.com/Dani3lT3rry1243" target="_blank" rel="noopener">github</a>
+      <a href="contact.html">contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
